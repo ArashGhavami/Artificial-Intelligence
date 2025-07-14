@@ -1,6 +1,6 @@
 # Artificial Intelligence Projects
 
-This repository contains a collection of practical projects covering core algorithms and methods in Artificial Intelligence. Each notebook focuses on a specific AI paradigm such as search, constraint satisfaction, probabilistic reasoning, or machine learning. The aim is to build a foundational understanding of AI by implementing algorithms and applying them to real datasets like DNA sequences or structured logic problems.
+This repository contains a collection of practical projects covering core algorithms and methods in Artificial Intelligence. Each notebook focuses on a specific AI paradigm such as search, constraint satisfaction, probabilistic reasoning, machine learning, or reinforcement learning. The aim is to build a foundational understanding of AI by implementing algorithms and applying them to real datasets like DNA sequences or structured logic problems.
 
 ---
 
@@ -12,6 +12,7 @@ This repository contains a collection of practical projects covering core algori
 | `CSP-Adversarial Search` | Sudoku solving using Constraint Satisfaction, Othello game with Minimax/Alpha-Beta |
 | `Bayesian Networks` | Probabilistic modeling and inference using DNA datasets |
 | `Machine Learning` | Supervised classification of DNA samples using models like SVM, Random Forest, and KNN |
+| `Reinforcement Learning` | Q-Learning agent trained on FrozenLake from OpenAI Gym |
 
 ---
 
@@ -53,6 +54,14 @@ Used for: **Probabilistic reasoning on DNA datasets**
 - Evidence-based inference  
 Useful for predicting missing gene values or estimating likelihoods in biological systems.
 
+### 🎮 6. Reinforcement Learning
+Implemented: **Q-Learning**  
+Applied to the **FrozenLake-v1** environment (OpenAI Gym) to train an agent that learns optimal actions in a slippery 4×4 grid world.  
+Key components:
+- Q-table learning
+- ε-greedy exploration
+- Performance tracking over episodes
+
 ---
 
 ## 📁 Example Notebooks
@@ -66,6 +75,7 @@ Useful for predicting missing gene values or estimating likelihoods in biologica
 | `kingdom_conflict_eldora.ipynb` | Strategy game with Minimax |
 | `dna_classification_ml_models.ipynb` | ML models trained on DNA data |
 | `bayes_net.ipynb` | Inference on genetic traits via Bayesian Network |
+| `frozenlake_q_learning.ipynb` | Q-Learning agent for FrozenLake environment |
 
 ---
 
@@ -74,4 +84,4 @@ Useful for predicting missing gene values or estimating likelihoods in biologica
 Install dependencies using pip:
 
 ```bash
-pip install numpy pandas scikit-learn matplotlib seaborn pgmpy networkx
+pip install numpy pandas scikit-learn matplotlib seaborn pgmpy networkx gym
